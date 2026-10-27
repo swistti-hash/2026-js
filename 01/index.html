@@ -3,22 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Часы</title>
+    <title>Пиксельные часы</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Часы</h1>
-    <main class="main">
-      <div class="digit"></div>
-      <div class="digit"></div>
-      <span>:</span>
-      <div class="digit"></div>
-      <div class="digit"></div>
-    </main>
+    <main class="page">
+      <h1>Пиксельные часы</h1>
+      <div class="main">
+        <div class="digit"></div>
+        <div class="digit"></div>
+        <span class="colon">:</span>
+        <div class="digit"></div>
+        <div class="digit"></div>
+      </div>
 
-    <h2>Редактор цифр</h2>
-    <p>Нарисуйте цифру, введите её в поле и нажмите SAVE. Координаты появятся в консоли браузера (F12).</p>
-    <div class="second"></div>
+      <section class="editor">
+        <h2>Редактор цифр</h2>
+        <div class="second">
+          <div class="editor-table"></div>
+          <div class="editor-controls">
+            <p>Закрась клетки и сохрани цифру</p>
+            <label for="digit-input">Цифра</label>
+            <div class="editor-actions">
+              <input id="digit-input" type="text">
+              <button type="button">Сохранить</button>
+            </div>
+            <p class="hint">Координаты появятся в консоли браузера (F12).</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>

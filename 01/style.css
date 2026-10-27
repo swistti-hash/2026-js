@@ -1,26 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: white;
-  color: black;
+  margin: 0;
+  background-color: #f5f5f3;
+  color: #292929;
   font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 28px;
+  line-height: 1.2;
 }
 
 .main {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
+  padding: 28px 16px;
+  background-color: white;
+  border: 1px solid #dededb;
+  border-radius: 8px;
+}
+
+table {
+  border-spacing: 3px;
 }
 
 td {
-  width: 20px;
-  height: 20px;
-  border: solid 1px black;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  background-color: #e8e8e5;
 }
 
 td.marked {
-  background-color: black;
+  background-color: #383838;
+}
+
+.colon {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.editor {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #dcdcd8;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+
+.second {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 .second td {
-  width: 40px;
-  height: 40px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.editor-controls {
+  padding-top: 3px;
+}
+
+.editor-controls p {
+  margin: 0 0 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+button {
+  height: 36px;
+  border: 1px solid #bdbdb8;
+  border-radius: 4px;
+  padding: 0 12px;
+  font: inherit;
+}
+
+input {
+  width: 84px;
+  background-color: white;
+  color: #292929;
+}
+
+button {
+  border-color: #46658a;
+  background-color: #46658a;
+  color: white;
+  cursor: pointer;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 2px solid #46658a;
+  outline-offset: 3px;
+}
+
+.editor-controls .hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #666;
+}
+
+@media (max-width: 560px) {
+  .page {
+    margin-top: 28px;
+  }
+
+  .main {
+    gap: 7px;
+    padding: 22px 8px;
+  }
+
+  .main table {
+    border-spacing: 2px;
+  }
+
+  .main td {
+    width: 10px;
+    height: 10px;
+  }
+
+  .colon {
+    font-size: 24px;
+  }
+
+  .second {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

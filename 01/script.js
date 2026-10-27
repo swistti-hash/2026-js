@@ -112,8 +112,7 @@ function createClickableTable(el, rows, columns) {
   let array = [];
   let object = {};
 
-  el.innerHTML = createTable(rows, columns);
-  el.innerHTML += '<button>SAVE</button> <input aria-label="Цифра">';
+  el.querySelector(".editor-table").innerHTML = createTable(rows, columns);
 
   const btn = el.querySelector("button");
   const input = el.querySelector("input");
