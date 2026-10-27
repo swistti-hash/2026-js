@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Практика 01 — Пиксельные часы</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <p class="eyebrow">JAVASCRIPT / ПРАКТИКА 01</p>
+      <h1>Пиксельные часы</h1>
+      <p class="intro">Текущее время, собранное из клеток.</p>
+      <section class="clock-panel" aria-label="Часы">
+        <div id="clock" role="img" aria-label="Текущее время">
+          <div class="digit"></div><div class="digit"></div>
+          <span class="colon" aria-hidden="true">:</span>
+          <div class="digit"></div><div class="digit"></div>
+        </div>
+        <p class="clock-note"><span class="status-dot"></span> Местное время · обновляется автоматически</p>
+      </section>
+      <section aria-labelledby="digits-title">
+        <h2 id="digits-title">Десять цифр — один принцип</h2>
+        <p>Каждая цифра — таблица 9 × 5 и список закрашенных клеток.</p>
+        <div id="gallery" class="gallery"></div>
+      </section>
+      <details>
+        <summary>Редактор цифр из практики</summary>
+        <p>Выберите цифру, измените клетки и нажмите SAVE. Изменения сохраняются до перезагрузки страницы.</p>
+        <div class="second"></div>
+      </details>
+      <footer>Куршаков Тимофей · Javascript, 2026</footer>
+    </main>
+  </body>
+</html>
